@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2B355C"
+        android:alpha="0.8"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_popup_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="30px"
+            android:background="@null"
+            android:src="@drawable/photo_popup_btn_cancel" />
+
+        <LinearLayout
+            android:layout_width="400px"
+            android:layout_height="230px"
+            android:background="@drawable/popwindow_shape_corner"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_set_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="设置壁纸"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_set_screensaver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="设置屏保"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_set_both"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="同时设定"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
