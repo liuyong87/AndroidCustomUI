@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DrawableCenterButton">
+        <attr name="attr_text" format="string" />
+        <attr name="attr_textColor" format="color" />
+        <attr name="attr_textSize" format="dimension" />
+        <attr name="attr_textBackground" format="reference" />
+        <attr name="attr_textWidth" format="dimension"/>
+        <attr name="attr_textHeight" format="dimension"/>
+        <attr name="attr_textFocus" format="boolean"/>
+    </declare-styleable>
+
+</resources>

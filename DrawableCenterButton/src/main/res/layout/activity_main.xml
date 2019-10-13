@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smk.drawablecenterbutton.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:nextFocusDown="@+id/btn01"
+        android:text="Hello World!" />
+
+    <com.smk.drawablecenterbutton.DrawableCenterButton
+        android:id="@+id/btn01"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@color/colorAccent"
+        android:focusable="true"
+        android:nextFocusUp="@+id/tv_show"
+        app:attr_text="@string/person_center_text"
+        app:attr_textBackground="@drawable/selector_btn_bg"
+        app:attr_textColor="@android:color/white"
+        app:attr_textSize="20px"
+        app:attr_textFocus="true">
+
+    </com.smk.drawablecenterbutton.DrawableCenterButton>
+
+</LinearLayout>
